@@ -1,0 +1,127 @@
+html, body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #e5eff5;
+}
+h1 {
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0.4rem;
+}
+h3, h4, h5, h6 {
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+p {
+    margin: 0;
+}
+/* Colors */
+.cyan {
+    color: #2ab2af;
+}
+.bright-yellow {
+    color: #c0df34;
+}
+.grey {
+    color: #e5eff5;
+}
+.grey-blue {
+    color: #98a6bd;
+}
+/*  */
+main {
+    -webkit-box-shadow: 2px 2px 10px 5px rgba(152,166,189,0.3); 
+    box-shadow: 2px 2px 10px 5px rgba(152,166,189,0.3);
+    border-radius: 10px;
+}
+.first-section {
+    background-color: #fff;
+    padding: 2rem;
+}
+.sign-up {
+    background-color: #2ab2af;
+    padding: 2rem;
+}
+.why-us {
+    background-color: rgba(42, 178, 175, 0.7);
+    padding: 2rem;
+}
+span {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 400;
+}
+button {
+    background-color: #c0df34;
+    color: #e5eff5;
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.3rem;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0.3rem;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+.smaller {
+    font-size: 0.8rem
+}
+ /* Desktop view */
+@media screen and (max-width: 1440px) {
+    main {
+        width: 50%;
+        margin: 10% auto;
+    }
+    .first-section {
+        border-radius: 0.3rem 0.3rem 0 0;
+    }
+    .second-section {
+        display: flex;
+        border-radius: 0 0 0.3rem 0.3rem;
+    }
+    .sign-up {
+        flex: 0.5;
+        border-radius: 0 0 0 0.3rem;
+    }
+    .why-us {
+        flex: 0.5;
+        border-radius: 0 0 0.3rem 0;
+    }
+}
+ /* Mobile view */
+@media screen and (max-width: 767px) {
+    main {
+        width: 90%;
+        margin: 10% auto;
+    }
+    .first-section {
+        border-radius: 0.3rem 0.3rem 0 0;
+    }
+    .second-section {
+        display: block;
+    }
+    .sign-up {
+        border-radius: 0;
+    }
+    .why-us {
+        border-radius: 0 0 0.3rem 0.3rem;
+    }
+}
